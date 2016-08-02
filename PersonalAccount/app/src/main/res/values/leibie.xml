@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="leibie1">
+        <item>大类别1</item>
+        <item>大类别2</item>
+        <item>大类别3</item>
+        <item>大类别4</item>
+    </string-array>
+</resources>

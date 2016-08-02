@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/passworded_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffd180"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_left"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/title_back" />
+
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:text="密码设置"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/center_line"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/center_line1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:id="@+id/ole_password_linearlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/center_line1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="right"
+                android:text="旧密码:"/>
+
+            <com.example.personalaccount.ui.ClearEditText
+                android:id="@+id/old_password"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:password="true"
+                android:layout_marginRight="40dp"
+                android:drawableRight="@drawable/delete_selector"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_above="@+id/center_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="right"
+                android:text="新密码:"/>
+
+            <com.example.personalaccount.ui.ClearEditText
+                android:id="@+id/new_password"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:password="true"
+                android:layout_marginRight="40dp"
+                android:drawableRight="@drawable/delete_selector"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        <View
+            android:id="@+id/center_line2"
+            android:layout_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:textColor="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/bg_corner_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="25sp"
+            android:id="@+id/btn_submit"
+            android:layout_toRightOf="@+id/center_line2"
+            android:layout_below="@+id/center_line"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"/>
+        <Button
+            android:textColor="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/bg_corner_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:id="@+id/btn_exist"
+            android:layout_toLeftOf="@+id/center_line2"
+            android:layout_below="@+id/center_line"
+            android:layout_margin="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -63,6 +63,7 @@ public class MainActivity extends Activity {
         activitylists.add(HelloWorldActivity.class);
         activitylists.add(FlatMapActivity.class);
         activitylists.add(ErrorScheduleSubscribeActivity.class);
+        activitylists.add(DoubleBindingActivity.class);
     }
 
     @OnItemClick(R.id.listview)

@@ -26,7 +26,8 @@
         <activity android:name=".activity.RxJavaExampleActivity" />
         <activity android:name=".activity.HelloWorldActivity" />
         <activity android:name=".activity.FlatMapActivity" />
-        <activity android:name=".activity.ErrorScheduleSubscribeActivity"></activity>
+        <activity android:name=".activity.ErrorScheduleSubscribeActivity" />
+        <activity android:name=".activity.DoubleBindingActivity"></activity>
     </application>
 
 </manifest>
